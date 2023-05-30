@@ -1,0 +1,30 @@
+@import "./Variables.scss";
+
+.resume-container{
+    background-color: $colorOne;
+    display: flex;
+    // border: 2px dotted red;
+    margin: 5% 5%;
+    padding: 2% 0%;
+    box-shadow: 0px 0px 10px 0px black;
+    
+    .resume-box-one{
+        justify-content: flex;
+        
+        .summary-box{
+            margin: 3%;
+            background-color: white;
+            box-shadow: 0px 0px 10px 0px black;
+        }
+        .techstack-box{
+            margin: 3%;
+            background-color: white;
+            box-shadow: 0px 0px 10px 0px black;
+        }
+        .exp-box{
+            margin: 3%;
+            background-color: white;
+            box-shadow: 0px 0px 10px 0px black;
+        }
+    }
+}
