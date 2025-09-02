@@ -9,6 +9,8 @@ import GearUp from '../../images/GearUpWebDev.png'
 import fistaxEcom from '../../images/fitstaxEcommerce.png'
 import RAG from '../../images/RAG_ai.png'
 import ChatHub from '../../images/ChatHub.png'
+import SpaceZoomies from '../../images/spacezoomies.png'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
     return (
@@ -27,6 +29,22 @@ const Projects = () => {
                     <br />
                 </h4>
 
+                <h3>SpaceZoomies</h3>
+                <div className="projects-box">
+                    <img src={SpaceZoomies} alt="" style={{ borderRadius: "1.2vw" }} />
+                    <ul>
+                        <br />
+                        <li><h4><Link to='https://mondulyfe.itch.io/spacezoomies' className=''>https://mondulyfe.itch.io/spacezoomies</Link></h4></li>
+                        <h5>Learned how to utilize Unity Engine 6 to challenge myself and test my C# knowledge</h5>
+                        <h6>After months of tutorials, practicings, and understanding the unity language, I have created my first 2D game and will someday move on to 3D. I created it to test my C# knowledge and to prove to myself I did it though I had much AI help. </h6>
+                        <li>Assets are all imported through Itch.io except for the burst of air</li>
+                        <li>Soundeffects, Audio, Music, all designed by myself utilizing Ableton DAW system.</li>
+                    </ul>
+                        <br />
+                </div>
+                <br />
+                <br />
+                <br />
                 <h3>KaraChat</h3>
                 <div className="projects-box">
                     <img src={ChatHub} alt="" style={{ borderRadius: "1.2vw" }} />
