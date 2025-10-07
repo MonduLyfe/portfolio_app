@@ -1,0 +1,253 @@
+@import "./Variables.scss";
+// @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+//DESKTOP
+@media screen and (min-width: 1200px) {
+.about-container{
+    .spockhands{
+        height: 100%;
+        width: 5%;
+    }
+
+    .box-one {
+        
+        flex: 1;
+        background-color: rgba(255, 255, 255, 0.1);
+        // border: 1px $colorOne solid;
+        // opacity: .5;
+
+        border-radius: 2vw;
+
+        display: flex;
+        margin: 10% 5%;
+        padding: 2% 3%;
+        ul{
+            list-style-type: none;
+            // font-family: 'Permanent Marker', cursive;
+            font-family: 'Calistoga', serif; //this must be used with google
+            font-size: 1.3rem;
+            color: white;
+        }
+        .left-box{
+            // display: inline;
+            // justify-content: center;
+            width: 60vw;
+            .profile_pic{
+                // border: 2px red dashed;
+                // width: 5vw;
+                // height: 5vh;
+                img{
+                    background-color: rgba(40, 47, 72, .8);
+                    border: 2px black solid;
+
+                    padding: 1em;
+                    border-radius: 3vw;
+                    height: 39vw;
+                    
+                }
+            }
+            .profile_description{
+                background-color: rgba(40, 47, 72, .8);
+                border: 2px black solid;
+
+                border-radius: 3vw;
+                padding: 1em;
+                margin: 1em;
+                ul li {
+                    font-size: .9em;
+                    font-family: 'Calistoga', serif;
+                }
+            }
+        }
+        .right-box{
+            width: 100%;
+
+            h3{
+                // align-items: center;
+                // border-color: red dotted 4px;
+                font-family: 'Permanent Marker', cursive;
+                font-size: 2em;
+                color: black;
+                -webkit-text-stroke: 1px #33FF33;
+            }
+            ul{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the minimum and maximum width as needed */
+
+                justify-content: space-evenly;
+            }
+
+        }
+        .techStack-box{
+            background-color: rgba(40, 47, 72, .8);
+            border-radius: 1vw;
+            padding: 1vw;
+            margin: 1vw;
+            border: 2px black solid;
+
+            li{
+                font-size: .8em;
+            }
+
+            img{
+                height: auto;
+                width: 60px;
+                // flex: 0 0 auto; /* This ensures that the image won't grow or shrink */
+            }
+        }
+        
+
+        .text-bubble {
+            // text-align: center;
+            font-family: 'Permanent Marker', cursive;
+            position: absolute;
+            background-color: white; /* Background color of the bubble */
+            color: black; /* Text color inside the bubble */
+            border-radius: 35px; /* Rounded corners for the bubble */
+            padding: 10px 15px; /* Padding inside the bubble */
+            max-width: 25%; /* Maximum width of the bubble */
+            top: 17vw;
+            left: 20vw;
+        }
+
+        .text-bubble::after {
+            content: '';
+            position: absolute;
+            // bottom: px; /* Adjust as needed to position the triangle */
+            left: 3vw; /* Position the triangle in the middle */
+            // margin-left: -5px; /* Half of the triangle's width */
+            border-width: 1.4em; /* Adjust the size of the triangle */
+            border-style: solid;
+            border-color: #ffffff transparent transparent transparent;
+            // display: block;
+            // width: 0;
+        }
+    }
+    
+}}
+
+//MOBILE
+@media screen and (max-width: 1200px) {
+.about-container{
+    margin: 0;
+
+    .box-one {
+        flex: 1;
+        background-color: rgba(255, 255, 255, 0.1);
+        // border: 1px $colorOne solid;
+        // opacity: .5;
+
+        border-radius: 4vw;
+
+        // display: flex;
+        margin: 10% 5%;
+        // padding: 2% 3%;
+        ul{
+            list-style-type: none;
+            // font-family: 'Permanent Marker', cursive;
+            font-family: 'Calistoga', serif; //this must be used with google
+            font-size: 1.3rem;
+            color: white;
+        }
+        .left-box{
+            // display: inline;
+            // width: 100vw;
+            // border: red solid 2px;
+            .profile_pic{
+                // border: 2px red dashed;
+                width: 90vw;
+                // height: 5vh;
+                img{
+                    background-color: rgba(40, 47, 72, .8);
+                    border: 2px black solid;
+
+                    padding: 1em;
+                    border-radius: 3vw;
+                    height: 85vw;
+                    
+                }
+            }
+            .profile_description{
+                background-color: rgba(40, 47, 72, .8);
+                border: 2px black solid;
+
+                border-radius: 3vw;
+                padding: 1em;
+                margin: 1em;
+                ul li {
+                    font-size: .9em;
+                    font-family: 'Calistoga', serif;
+                }
+            }
+        }
+        .right-box{
+            width: 100%;
+            // display: flex;
+            overflow: hidden;
+            ul{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the minimum and maximum width as needed */
+                justify-content: space-evenly;
+            }
+            h3{
+                // align-items: center;
+                // border-color: red dotted 4px;
+                font-family: 'Permanent Marker', cursive;
+                font-size: 2em;
+                color: black;
+                -webkit-text-stroke: 1px #33FF33;
+            }
+        }
+        .techStack-box{
+            background-color: rgba(40, 47, 72, .8);
+            border-radius: 3vw;
+            padding: 1vw;
+            margin: 1vw;
+            border: 2px black solid;
+
+            li{
+                font-size: .8em;
+            }
+
+            img{
+                height: auto;
+                width: 60px;
+                // flex: 0 0 auto; /* This ensures that the image won't grow or shrink */
+            }
+        }
+        
+
+        .text-bubble {
+            // text-align: center;
+            font-family: 'Permanent Marker', cursive;
+            position: absolute;
+            background-color: white; /* Background color of the bubble */
+            color: black; /* Text color inside the bubble */
+            border-radius: 35px; /* Rounded corners for the bubble */
+            padding: 10px 15px; /* Padding inside the bubble */
+            max-width: 45%; /* Maximum width of the bubble */
+            top: 55vw;
+            left: 40vw;
+
+            .spockhands{
+                height: auto;
+                width:30%;
+            }
+        }
+
+        .text-bubble::after {
+            content: '';
+            position: absolute;
+            // bottom: 1px; /* Adjust as needed to position the triangle */
+            left: 5vw; /* Position the triangle in the middle */
+            // margin-left: -5px; /* Half of the triangle's width */
+            border-width: 1.4em; /* Adjust the size of the triangle */
+            border-style: solid;
+            border-color: #ffffff transparent transparent transparent;
+            // display: block;
+            // width: 0;
+        }
+        
+    }
+    
+}}

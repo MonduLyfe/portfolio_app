@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fefa350e.css",
+    "main.js": "/static/js/main.f111712c.js",
+    "static/js/787.30237536.chunk.js": "/static/js/787.30237536.chunk.js",
+    "static/media/starwars.png": "/static/media/starwars.5482a5b462eb691e7bfb.png",
+    "static/media/GDS.png": "/static/media/GDS.17892ec2dc76ee82afe9.png",
+    "static/media/shooterprofile.png": "/static/media/shooterprofile.90949703e4eb5a1b2d9f.png",
+    "static/media/lae.png": "/static/media/lae.5b01242b125cfcfd50ec.png",
+    "static/media/city_profile_pic.png": "/static/media/city_profile_pic.849a625fe5549c1629a5.png",
+    "static/media/crumbledpaper.jpg": "/static/media/crumbledpaper.4b35d85091699afa6c49.jpg",
+    "static/media/linkedinlogo.png": "/static/media/linkedinlogo.a680cb8ad2b88be03d17.png",
+    "index.html": "/index.html",
+    "main.fefa350e.css.map": "/static/css/main.fefa350e.css.map",
+    "main.f111712c.js.map": "/static/js/main.f111712c.js.map",
+    "787.30237536.chunk.js.map": "/static/js/787.30237536.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fefa350e.css",
+    "static/js/main.f111712c.js"
+  ]
+}

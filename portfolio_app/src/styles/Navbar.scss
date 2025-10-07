@@ -1,55 +1,110 @@
 @import "./Variables.scss";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-
-
-.link{
-    text-decoration: none;
-}
-
-.mainbar{
-    position:fixed;
-    background: $colorOne;
-    padding: .009%;
-    box-shadow: 0px 0px 5px;
+//desktop
+@media screen and (min-width: 1200px) {
+.nav-container{
+    // flex: 1;
+    // mobile
+    // display: flex;
+    .link{
+        text-decoration: none;
+    }
     
+    .mainbar{
+        // display: flex;
+        top: 0;
+        position: fixed;
+        width: 100%; /* Make it full width */
 
-    ul{
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        margin-right: 7%;
+        // background: $colorOne;
+        background-color: rgba(0, 0, 0, 0.8);
+        // background-color: rgba(255, 255, 255, 0.1);
+
+        border-top: 1px solid $colorOne;
+        border-bottom: 1px solid $colorOne;
+        // padding: .009%;
+        box-shadow: 0px 0px 5px;
         
         
-        .cubepic{
-            object-fit: cover;
-            // max-width: 100%;
-            height: 12%; 
-            width: 8%; 
-            margin: -2% 75%;
-            position: fixed;
-            animation: spin 5s infinite linear;
-        }
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
+        // opacity: 0; /* Start with 0 opacity */
+        // animation-name: fadeIn; /* Use the fadeIn animation */
+        // animation-duration: 2s; /* Animation duration */
+        // animation-delay: 15.5s; /* Delay before animation starts */
+        // animation-fill-mode: forwards; /* Maintain opacity after animation */
+        
+        // @keyframes fadeIn {
+        //     from {
+        //         opacity: 0; /* Start with 0 opacity */
+        //     }
+        //     to {
+        //         opacity: 1; /* Fade in to full opacity */
+        //     }
+        // }
 
-        ol{
-            font-size: 2rem;
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin-right: 7%;
+            
+            ol{
+                position:relative;
+                font-size: 2em;
+                font-weight: 500;
+                text-shadow: 0px 0px 15px   ;
+                font-family: 'Permanent Marker', cursive;
 
-            font-weight: 500;
-            text-shadow: 0px 0px 15px   ;
-            font-family: 'Permanent Marker', cursive;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                
 
-            &:hover{
-                font-weight: bolder;
-                color: black;
             }
         }
     }
-}
+}}
+
+//mobile
+@media screen and (max-width: 1200px) {
+    .nav-container{
+        justify-content: center;
+
+        .link{
+            text-decoration: none;
+        }
+        
+        .mainbar{
+            // display: flex;
+            // position: relative;
+            // background: $colorOne;
+            background-color: black;
+            border-top: 1px solid $colorOne;
+            border-bottom: 1px solid $colorOne;
+            // padding: .009%;
+            box-shadow: 0px 0px 5px;
+            
+            
+            ul{
+                // display: flex;
+                list-style: none;
+                justify-content: center;
+                margin-right: 7%;
+                
+                ol{
+                    position:relative;
+                    font-size: 2em;
+                    
+                    font-weight: 500;
+                    text-shadow: 0px 0px 15px   ;
+                    font-family: 'Permanent Marker', cursive;
+                    
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                    
+                    font-size: 1.5em; // Adjust font size for smaller screens
+                }
+            }
+        }
+    }}

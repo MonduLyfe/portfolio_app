@@ -1,8 +1,46 @@
+@import "./Variables.scss";
+
 .contact-box-one{
-    background-color: white;
-    margin-top: 20%;
+    background-color: rgba(40, 47, 72, .8);
+    border: 1px solid $colorOne;
+    border-radius: 1.5vw;
+    color: white;
+    margin-top: 10%;
     // margin: 7% 5%;
     padding: 2% 2%;
     box-shadow: 0px 0px 10px 0px black;
     font-family: 'Permanent Marker', cursive;
+}
+
+.box-contact{
+    h1{
+        font-size: 3em;
+        font-family: 'Belanosima', sans-serif;
+    }
+    Form{
+        margin: 0em 25% 10em;
+
+        input{
+            font-size: larger;
+            margin: 1em;
+            border-radius: .5em;
+        }
+
+        Button{
+            // font-size:2em;
+            // text-shadow: 2px 2px 5px black;
+            border-radius: .5em;
+            color:white;
+            background-color: black;
+            padding: 0 1em;
+            font-weight: bold;
+
+            &:hover{
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e4f5fc+0,2ab0ed+21,2ab0ed+57,2ab0ed+57,bfe8f9+69,9fd8ef+72,9fd8ef+72,bfe8f9+80,bfe8f9+80,9fd8ef+86 */
+                color:#33FF33;
+                font-weight: bold;
+                background-color: black;
+            }
+        }
+    }
 }
