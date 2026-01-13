@@ -23,7 +23,7 @@ const Projects = () => {
                 <h4>
                     <p>
                         🔥🔥🔥🔥
-                        <a href="https://github.com/MeloVicG" style={{ textDecoration: "none" }}><img src={github} alt="" style={{ height: "3em", width: "3em" }} /></a>
+                        <a href="https://github.com/MonduLyfe" style={{ textDecoration: "none" }}><img src={github} alt="" style={{ height: "3em", width: "3em" }} /></a>
                         🔥🔥🔥🔥
                     </p>
                     <br />
