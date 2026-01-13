@@ -8,7 +8,7 @@ const Resume = () => {
             <div className='resume-container'>
                 <div className="resume-box-one">
                     <h4 style={{ fontFamily: "Permanent Marker", fontSize: "3em", WebkitTextStroke: "1px #33FF33" }}>resume</h4>
-                    <a href="https://github.com/MeloVicG" style={{ textDecoration: "none" }}><img src={github} alt="" style={{ height: "3em", width: "3em" }} /></a>
+                    <a href="https://github.com/MonduLyfe" style={{ textDecoration: "none" }}><img src={github} alt="" style={{ height: "3em", width: "3em" }} /></a>
                     <a href="https://www.linkedin.com/in/victor-gargurevich-103026155/" style={{ textDecoration: "none" }}><img src={linkedinlogo} alt="" style={{ height: "3em", width: "3em" }} /></a>
                     <div className="summary-box">
                         <p style={{ padding: "2em" }}>
